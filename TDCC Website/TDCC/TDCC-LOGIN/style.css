@@ -1,0 +1,251 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@400;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    /* background: linear-gradient(to right, #333399, #ff00cc); */
+    background: linear-gradient(-45deg, red, yellow, #333399, #ff00cc, #ff9966, #ff5e62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 5s ease-in-out infinite;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.login-card{
+    width: 500px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+.login-card::before{
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.login-card-logo{
+    margin-bottom: 2rem;
+}
+.login-card-logo img{
+    width: 130px; 
+}
+.login-card-header,
+.login-card-footer{
+    text-align: center;
+}
+.login-card a{
+    text-decoration: none;
+    color: #35339a;
+}
+.login-card a:hover{
+    text-decoration: underline;
+}
+.login-card-header{
+    margin-bottom: 2rem;
+}
+.login-card-header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.login-card-header h1 + div {
+    font-size: calc(1rem*1.1);
+    opacity: .8;
+}
+.login-card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.login-card-form .form-item{
+    position: relative;
+}
+.login-card-form .form-item .form-item-icon{
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+.login-card-form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.login-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem);
+    margin-bottom: .5rem;
+}
+.login-card-footer{
+    margin-top: 1.5rem;
+    font-size: calc(1rem*0.9);
+}
+.login-card input[type = "text"],
+.login-card input[type = "password"],
+.login-card input[type = "email"]{
+    border: none;
+    outline: none;
+    background:rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem*3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+.login-card input:focus{
+    background: white;
+}
+.login-card input[type = "checkbox"]{
+    width: 18px;
+    height: 18px;
+    accent-color: black;
+}
+.login-card-form button{
+    background: black;
+    color: white;
+    font-size: 18px;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+.login-card-form button:hover{
+    background-color: rgba(0, 0, 0, .85);
+    cursor: pointer;
+}
+input{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.circles div{
+    position:absolute;
+    /* display: block; */
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, .2);
+    bottom: -150px;
+    animation: animate-shape 10s linear infinite;
+    overflow: hidden;
+}
+.circles div:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.circles div:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.circles div:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.circles div:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.circles div:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.circles div:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.circles div:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+.circles div:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.circles div:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.circles div:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+/* responsive */
+@media (max-width: 768px){
+    body{
+        padding: 2rem 0;
+    }
+    .login-card{
+        width: 300px;
+        padding: 2rem;
+    }
+}
+/* animation for the bg. */
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+/* animation for the shapes here. */
+@keyframes animate-shape {
+    0%{
+        opacity: 1;
+        border-radius: 0;
+        transform: translateY(0) rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        border-radius: 50%;
+        transform: translateY(-1000px) rotate(720deg);
+    }
+}

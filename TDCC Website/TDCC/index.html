@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDCC Sushant University</title>
+
+    <!-- linking the page animation file here. -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- linking the main css file here. -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <style>
+        body {
+            background-image: url(./images/bg-texture.png);
+        }
+    </style>
+
+    <!-- linking the iconscout cdn here. -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- linking google font here. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=The+Nautigal:wght@700&family=Ubuntu:ital@0;1&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- SWIPER-JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body onload = "myLoader()">
+    <!-- creating the preloader here. -->
+    <div id = "loading"></div>
+
+    <!-- creating the navbar here. -->
+    <nav>
+        <div class="container nav__container">
+            <h4><a href="index.html">TDCC</a></h4>
+            <ul class="nav__menu">
+                <!-- creating the navbar items here. -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- creating the menu btns here. -->
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- end of navbar. -->
+
+    <!-- creating the header here. -->
+    <header>
+        <div class="container header__container">
+            <div class="header__left" data-aos = "slide-up" data-aos-duration="1000">
+                <h1>Trans Disciplinary Certification Courses</h1>
+                <p>
+                    <h3>Grow your Skills to Advance your Carrer Path</h3>
+                </p>
+                <a href="courses.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <div class="header__right" data-aos = "slide-up" data-aos-duration="1000">
+                <div class="header__right-image">
+                    <img src="./images/header.svg" alt="image not found :(">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ======================= END OF HEADER ================== -->
+
+    <!-- creating the categories section here. -->
+    <section class="categories" data-aos = "slide-up" data-aos-duration="1000">
+        <div class="container categories__container">
+
+            <div class="categories__left" data-aos = "flip-up" data-aos-duration="1000">
+                <h1>Categories</h1>
+                <p>
+                    Transdisciplinary thinking is the new frontier of learning – imaginative, collaborative, and responsive to unprecedented societal change. Here are few fields where students can ace according to their interests
+                </p>
+                <a href="courses.html" class = "btn btn-primary">Enroll Now</a>
+            </div>
+
+            <div class="categories__right">
+
+                <article class="category" data-aos = "flip-right" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <h5>Engineering</h5>
+                    <p>"Science can amuse and fascinate us all, but it is engineering that changes the world"</p>
+                </article>
+
+                <article class="category" data-aos = "flip-up" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-palette"></i></span>
+                    <h5>Designing</h5>
+                    <p>"Designers are meant to be loved, not to be understood."</p>
+                </article>
+
+                <article class="category" data-aos = "flip-left" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-heart-medical"></i></span>
+                    <h5>Health Science</h5>
+                    <p>“The art of medicine consists of amusing the patient while nature cures the disease.”</p>
+                </article>
+
+                <article class="category" data-aos = "flip-down" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-megaphone"></i></span>
+                    <h5>Marketing</h5>
+                    <p>"Success is making those who believed in you look brilliant."</p>
+                </article>
+
+                <article class="category" data-aos = "flip-down" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-usd-circle"></i></span>
+                    <h5>Finance</h5>
+                    <p>“Money is a terrible master but an excellent servant.”</p>
+                </article>
+                
+                <article class="category" data-aos = "flip-down" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-arrow-growth"></i></i></span>
+                    <h5>Business</h5>
+                    <p>“If you don’t build your dream, someone else will hire you to help them build theirs.”</p>
+                </article>
+
+                <article class="category" data-aos = "flip-right" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-book-open"></i></i></span>
+                    <h5>Law Ethics</h5>
+                    <p>Ethics is knowing the difference between what you have to do and what is right to do.</p>
+                </article>
+
+                <article class="category" data-aos = "flip-up" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-puzzle-piece"></i></span>
+                    <h5>Architecture</h5>
+                    <p>"By dint of building well, you get to be a good architect"</p>
+                </article>
+
+                <article class="category" data-aos = "flip-left" data-aos-duration="1000">
+                    <span class="category__icon"><i class="uil uil-star"></i></i></span>
+                    <h5>Fashion</h5>
+                    <p>"Fashion is like eating, you shouldn't stick to the same menu."</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- creating the courses section here. -->
+    <section class="courses" data-aos = "zoom-in-up" data-aos-duration="1000">
+        <h2>Our Popular Courses</h2>
+        <div class="container courses__container">
+
+            <article class="course" data-aos = "slide-right" data-aos-duration="1000">
+                <div class="course__image">
+                    <img src="./images/course9.jpg" alt="course-1">
+                </div>
+                <div class="course__info">
+                    <h4>Social Media<br>Marketing</h4>
+                <p>
+                    If you want to be successful with Social Media Marketing you will LOVE this.
+                    The optimization of your social media accounts is a REQUIRED skill for ALL marketers and business owners.
+                </p>
+                <a href="courses.html" class = "btn btn-primary">Enroll Now</a>
+                </div>
+            </article>
+
+            <article class="course" data-aos = "zoom-in-up" data-aos-duration="1000">
+                <div class="course__image">
+                    <img src="./images/course1.jpg" alt="course-1">
+                </div>
+                <div class="course__info">
+                    <h4>Tech. Automation<br>In Industry</h4>
+                <p>
+                    You will create automation rules using triggers, conditions and actions to auto assign tasks, apply sub tasks templates to reflect your business processed into your project management.
+                </p>
+                <a href="courses.html" class = "btn btn-primary">Enroll Now</a>
+                </div>
+            </article>
+
+            <article class="course" data-aos = "slide-left" data-aos-duration="1000">
+                <div class="course__image">
+                    <img src="./images/course3.jpg" alt="course-1">
+                </div>
+                <div class="course__info">
+                    <h4>Basic Of<br>Health Laws</h4>
+                <p>
+                    In Medico-legal cases, Case Laws and Precedents play a vital role, and Courts and adjudicating authorities follow the same while adjudicating such cases arising out of treatment by the doctors.
+                </p>
+                <a href="courses.html" class = "btn btn-primary">Enroll Now</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- END OF COURSES. -->
+
+    <!-- creating the FAQS section here. -->
+    <section class="faqs" data-aos = "zoom-in-up" data-aos-duration="1000">
+        <h2 data-aos = "zoom-in-up" data-aos-duration="1000">Frequently Asked Question</h2>
+        <div class="container faqs__container">
+
+            <article class="faq" data-aos = "flip-left" data-aos-duration="1000">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How to get enrolled or apply ?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur deserunt error ullam accusamus vel, alias laudantium laboriosam ducimus illum itaque perspiciatis architecto ex culpa delectus dolore voluptatem labore doloribus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq" data-aos = "flip-right" data-aos-duration="1000">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do I know the right course for me ?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur deserunt error ullam accusamus vel, alias laudantium laboriosam ducimus illum itaque perspiciatis architecto ex culpa delectus dolore voluptatem labore doloribus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq" data-aos = "flip-left" data-aos-duration="1000">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What's the course duration ?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur deserunt error ullam accusamus vel, alias laudantium laboriosam ducimus illum itaque perspiciatis architecto ex culpa delectus dolore voluptatem labore doloribus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq" data-aos = "flip-right" data-aos-duration="1000">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Is it compulsory to enroll in these courses ?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur deserunt error ullam accusamus vel, alias laudantium laboriosam ducimus illum itaque perspiciatis architecto ex culpa delectus dolore voluptatem labore doloribus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq" data-aos = "flip-left" data-aos-duration="1000">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What's the evalutation procedure ?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur deserunt error ullam accusamus vel, alias laudantium laboriosam ducimus illum itaque perspiciatis architecto ex culpa delectus dolore voluptatem labore doloribus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq" data-aos = "flip-right" data-aos-duration="1000">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What's the attendence criteria ?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur deserunt error ullam accusamus vel, alias laudantium laboriosam ducimus illum itaque perspiciatis architecto ex culpa delectus dolore voluptatem labore doloribus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq" data-aos = "flip-left" data-aos-duration="1000">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Can i change my course after getting enrolled in it successfully ?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur deserunt error ullam accusamus vel, alias laudantium laboriosam ducimus illum itaque perspiciatis architecto ex culpa delectus dolore voluptatem labore doloribus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq" data-aos = "flip-right" data-aos-duration="1000">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4 cursorshover="true">Can i enroll in two different courses simultaneously?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur deserunt error ullam accusamus vel, alias laudantium laboriosam ducimus illum itaque perspiciatis architecto ex culpa delectus dolore voluptatem labore doloribus.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <!-- END OF FAQs. -->
+
+    <!-- creating the testimonial section here. -->
+    <section class="container testimonials__container mySwiper" data-aos = "zoom-in-up" data-aos-duration="1000">
+        <h2 data-aos = "zoom-in-up" data-aos-duration="1000">Student's Testimonial</h2>
+        <div class="swiper-wrapper">
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg" alt="avatar1">
+                </div>
+                <div class="testimonial__info" data-aos = "zoom-in-up" data-aos-duration="1000">
+                    <h5>Divyanshi</h5>
+                    <small>Health Law TDCC</small>
+                </div>
+                <div class="testimonial__body" data-aos = "slide-left" data-aos-duration="1000">
+                    <p>
+                        I had a great learning experience with TDCC. I learnt that how Health Laws are important for us as a general need and also as a right of a consumer.
+                        So far this is the best Health Law course that I've ever taken.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg" alt="avatar2">
+                </div>
+                <div class="testimonial__info" data-aos = "zoom-in-up" data-aos-duration="1000">
+                    <h5>Abhijit Mandal</h5>
+                    <small>Health Law TDCC</small>
+                </div>
+                <div class="testimonial__body" data-aos = "slide-left" data-aos-duration="1000">
+                    <p>
+                        I had a great learning experience with TDCC. I learnt that how Health Laws are important for us as a general need and also as a right of a consumer.
+                        So far this is the best Health Law course that I've ever taken.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg" alt="avatar3">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Hardik Sharma</h5>
+                    <small>Digital Marketing TDCC</small>
+                </div>
+                <div class="testimonial__body" data-aos = "slide-up" data-aos-duration="1000">
+                    <p>
+                        So far this is the best social media course that I've ever taken for digital marketing. I went from knowing the small features to a lot of big features and opportunities available to use to get you going on your social media business journey.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg" alt="avatar4">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Shivam Sharma</h5>
+                    <small>Digital Marketing TDCC</small>
+                </div>
+                <div class="testimonial__body" data-aos = "slide-up" data-aos-duration="1000">
+                    <p>
+                        So far this is the best social media course that I've ever taken for digital marketing. I went from knowing the small features to a lot of big features and opportunities available to use to get you going on your social media business journey.
+                    </p>
+                </div>
+            </article>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- end of testimonial. -->
+
+    <!-- creating the footer section here. -->
+    <footer data-aos = "zoom-in-up" data-aos-duration="1000">
+        <div class="container footer__container" data-aos = "slide-up" data-aos-duration="1000">
+            <div class="footer__1">
+                <a href="index.html" class = "footer__logo"><h4>TDCC</h4></a>
+                <p>
+                    <b>Sushant University</b> (Erstwhile Ansal University) Provides TDC Courses to educate students in the exploration and utilization of diverse approaches to critical thinking.
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>1800-270-5520</p>
+                    <p>sushantuniversity@gmail.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li><a href="https://www.facebook.com/SushantUniversity/"target="_blank" rel="noopener noreferrer"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/sushant.university/"target="_blank" rel="noopener noreferrer"><i class="uil uil-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/SushantUni"target="_blank" rel="noopener noreferrer"><i class="uil uil-twitter-alt"></i></a></li>
+                    <li><a href="https://in.linkedin.com/school/sushantuniversity/"target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- creating the copyright section here. -->
+        <div class="footer__copyright">
+            <small>Copyright &copy; Sushant University TDCC</small>
+        </div>
+
+    </footer>
+    <!-- end of the footer section here. -->
+
+    <!-- linking the swiper js file here. -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- linking the js file here. -->
+    <script src="./main.js"></script>
+    <!-- linking the page animation js file here. -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
