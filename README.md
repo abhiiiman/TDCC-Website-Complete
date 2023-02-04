@@ -20,4 +20,4 @@ Floating Cubes with smooth gradient change transition.
 ![image](https://user-images.githubusercontent.com/111262410/216769898-02f09362-c851-41bd-9e86-ee76e73f6f74.png)
 # Contact Page UI
 ![image](https://user-images.githubusercontent.com/111262410/216769971-838e8e9b-ca88-40f9-99e7-a35d07006af9.png)
-# Thanks for being here ^_~ Don't Forget to Follow and Star ✪ My Repos 💢
+Thanks for being here ^_~ Don't Forget to Follow and Star ✪ My Repos 💢
